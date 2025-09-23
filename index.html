@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>🏠 Home</title>
+    <style>
+
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            background-image: url(mainbackground.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: fixed;
+            color: #333;
+        }
+
+        nav {
+            background-color: rgb(30, 182, 182);
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: #000;
+            text-decoration: none;
+            padding: 7px 15px;
+            border: 3px solid rgb(68, 9, 9);
+            border-radius: 5px;
+            background-color: rgb(30, 182, 182);
+            font-weight: 600;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        nav a:hover, nav a.active {
+           transform: scale(1.1);
+           text-decoration: underline;
+           color: black;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+
+        .welcome img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin-bottom: 40px;
+            border: 3px solid #000;
+            transition: transform 1s;
+        }
+
+        .welcome img:hover{
+            transform: scale(1.01);
+        }
+
+        section {
+            background-color: aquamarine;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            border-bottom: 2px solid black;
+            padding-bottom: 8px;
+        }
+
+        /* Cards container with flex wrap */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Card style */
+        .card {
+            flex: 1 1 300px;
+            max-width: 380px;
+            background: #fff;
+            border: 2px solid rgb(54, 51, 51);
+            border-radius: 10px;
+            padding: 10px ;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 4px solid rgba(255,255,255,0.06);
+            border-radius: 6px;
+        }
+
+        h3{
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav> 
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">🤲 About Us</a>
+        <a href="contact.html">🛂 Contact</a>
+    </nav>
+
+    <main>
+        <div class="welcome" >
+            <img src="welcome.png" alt="Mumbai skyline view" />
+        </div>
+
+        <section id="France">
+            <h2>France :</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Eiffeal Tower(Paris)</h3>
+                    <img src="Eiffel Tower (Paris).jpg" alt="Eiffeal Tower(Paris)" />
+                </article>
+                <article class="card">
+                    <h3>Palace of Versailles</h3>
+                    <img src="Palace of Versailles.jpg" alt="Palace of Versailles" />
+                </article>
+                <article class="card">
+                    <h3>Mont Saint-Michel</h3>
+                    <img src="Mont Saint-Michel.jpg" alt=" Mont Saint-Michel" />
+                </article>
+            </div>
+        </section>
+
+        <section id="Spain">
+            <h2>Spain :</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Alhambra (Granada)</h3>
+                    <img src="Alhambra (Granada).jpg" alt="Alhambra (Granada)" />
+                </article>
+                <article class="card">
+                    <h3>Sagrada Família (Barcelona)</h3>
+                    <img src="Sagrada Família (Barcelona).jpg   " alt="Sagrada Família (Barcelona)" />
+                </article>
+                <article class="card">
+                    <h3>Royal Palace (Madrid)</h3>
+                    <img src="Royal Palace (Madrid).jpg" alt="Royal Palace (Madrid)" />
+                </article>
+            </div>
+        </section>
+
+        <section id="United States">
+            <h2>United States : </h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Statue of Liberty (New York)</h3>
+                    <img src="Statue of Liberty (New York).jpg" alt="Statue of Liberty (New York)" />
+                </article>
+                <article class="card">
+                    <h3> Grand Canyon (Arizona)</h3>
+                    <img src="Grand Canyon (Arizona).jpg" alt=" Grand Canyon (Arizona)" />
+                </article>
+                <article class="card">
+                    <h3>Disney World (Florida)</h3>
+                    <img src="Disney World (Florida).jpg" alt="Disney World (Florida)" />
+                </article>
+            </div>
+        </section>
+
+        <section id="Italy">
+            <h2>Italy :</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Colosseum (Rome)</h3>
+                    <img src="Colosseum (Rome).jpg" alt="Colosseum (Rome)" />
+                </article>
+                <article class="card">
+                    <h3>Venice Canals (Venice)</h3>
+                    <img src="Venice Canals (Venice).jpg" alt="Venice Canals (Venice)" />
+                </article>
+                <article class="card">
+                    <h3>Florence Cathedral (Florence)</h3>
+                    <img src="Florence Cathedral (Florence).jpg" alt="Florence Cathedral (Florence)" />
+                </article>
+            </div>
+        </section>
+
+        <section id="Japan">
+            <h2>Japan :</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Kyoto Temples</h3>
+                    <img src="Kyoto Temples.jpg" alt="Kyoto Temples" />
+                </article>
+                <article class="card">
+                    <h3>Fushimi Inari Shrine (Kyoto)</h3>
+                    <img src="Fushimi Inari Shrine (Kyoto).jpg" alt="Fushimi Inari Shrine (Kyoto)" />
+                </article>
+                <article class="card">
+                    <h3>Tokyo Tower (Tokyo)</h3>
+                    <img src="Tokyo Tower (Tokyo).jpg" alt="Tokyo Tower (Tokyo)" />
+                </article>
+            </div>
+        </section>
+
+        <section id="Sri Lanka">
+            <h2>Sri Lanka :</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Galle Fort,</h3>
+                    <img src="Galle Fort.jpg" alt="Galle Fort," />
+                </article>
+                <article class="card">
+                    <h3>Sigiriya Rock Fortress</h3>
+                    <img src="Sigiriya Rock Fortress.jpg" alt="Sigiriya Rock Fortress" />
+                </article>
+                <article class="card">
+                    <h3>Yala National Park</h3>
+                    <img src="Yala National Park.jpg" alt="Yala National Park" />
+                </article>
+            </div>
+        </section>
+
+        <section id="Morocco">
+            <h2>Morocco :</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Marrakech Medina</h3>
+                    <img src="Marrakech Medina.jpg" alt="Marrakech Medina" />
+                </article>
+                <article class="card">
+                    <h3> Sahara Desert</h3>
+                    <img src="Sahara Desert.jpg" alt=" Sahara Desert" />
+                </article>
+                <article class="card">
+                    <h3>Essaouira Coastal Town</h3>
+                    <img src="Essaouira Coastal Town.jpg" alt="Essaouira Coastal Town" />
+                </article>
+            </div>
+        </section>
+
+        <section class="footer">
+            <h3>© 2025 Patel Tours & travels | All Rights Reserved</h3>
+        </section>
+    </main>
+</body>
+</html>
